@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #1c1c1c;
+  background-image: url("../images/vojtech-bruzek-Yrxr3bsPdS0-unsplash(1).jpg");
+  font-weight: 600;
+  background-position: "center";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f1f1f1;
+  background-attachment: fixed;
+}
+
+.back-button {
+  font-size: 18px;
+  color: #fff;
+  margin: 30px 50px;
+  border: #fff 1px solid;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 6px 14px;
+  background-color: transparent;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-button p {
+  margin-left: 7px;
+    font-weight: 400;
+    font-size: 22px;
+}
+.back-button:hover {
+  background-color: #fff;
+  color: #333;
+  font-weight: 300;
+}
+
+.hotel {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-top: 70vh;
+}
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: -5px;
+}
+.hotel-imagem {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+h3,
+.hotel-titulo,
+.hotel-localizacao,
+.hotel-descricao,
+.hotel-estrelas,
+.hotel-facilidades {
+  margin-top: 10px;
+}
+.title_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotel-titulo {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: -10px;
+}
+.local-icone{
+    font-size: 21px;
+    color: #333;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+.hotel-localizacao {
+  font-size: 20px;
+  font-weight: 500;
+}
+.hotel-estrelas {
+  font-size: 18px;
+  color: #333;
+}
+.hotel-avaliacao i:last-child {
+  color: #999;
+}
+.card-area {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+ img {
+  width: 32%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.hotel-descricao {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 25px;
+  font-weight: 400;
+}
+.hotel-facilidades_icone {
+  font-size: 18px;
+  margin: 12px 4px;
+  color: #1c1c1c;
+  padding: 10px;
+  border: 1px solid #1c1c1c;
+  border-radius: 50%;
+}
+.hotel-reservas {
+  width: 100%;
+  margin: 30px 0;
+}
+.hotel-botao-reserva {
+  padding: 15px 40px;
+  display:inline-block;
+  background-color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-botao-reserva a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.hotel-botao-reserva:hover {
+  color: #1c1c1c;
+  background-color: #fff;
+}
+
+@media (max-width:768px) {
+  .hotel-botao-reserva {
+    width: 100%;
+  }
+}
