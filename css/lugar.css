@@ -6,11 +6,55 @@
   box-sizing: border-box;
 }
 
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: #000000a1 0 2px 10px;
+
+  nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 10px;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 550;
+        color: #fff;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #437eff;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #1c1c1c;
-  background-image: url("../images/freeman-zhou-oV9hp8wXkPE-unsplash.jpg");
+  background-image: url("../images/lugares/big-city-morning.jpg");
   font-weight: 600;
   background-position: "center";
   background-repeat: no-repeat;
@@ -40,6 +84,7 @@ body {
   font-weight: 400;
   font-size: 22px;
 }
+
 .back-button:hover {
   background-color: #fff;
   color: #333;
@@ -54,11 +99,13 @@ body {
   padding: 20px 40px;
   margin-top: 70vh;
 }
+
 h3 {
   font-weight: bold;
   font-size: 25px;
   margin-bottom: -5px;
 }
+
 .hotel-imagem {
   width: 100%;
   height: 350px;
@@ -73,33 +120,40 @@ h3,
 .hotel-facilidades {
   margin-top: 10px;
 }
+
 .title_area {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .hotel-titulo {
   font-size: 40px;
   font-weight: 900;
   margin-bottom: -10px;
 }
+
 .local-icone {
   font-size: 21px;
   color: #333;
   margin: 0 3px;
   border-radius: 50%;
 }
+
 .hotel-localizacao {
   font-size: 20px;
   font-weight: 500;
 }
+
 .hotel-estrelas {
   font-size: 18px;
   color: #333;
 }
+
 .hotel-avaliacao i:last-child {
   color: #999;
 }
+
 .card-area {
   height: 100%;
   display: flex;
@@ -131,6 +185,7 @@ img {
   line-height: 25px;
   font-weight: 400;
 }
+
 .hotel-facilidades_icone {
   font-size: 18px;
   margin: 12px 4px;
@@ -139,10 +194,12 @@ img {
   border: 1px solid #1c1c1c;
   border-radius: 50%;
 }
+
 .hotel-reservas {
   width: 100%;
   margin: 30px 0;
 }
+
 .hotel-botao-reserva {
   padding: 15px 40px;
   display: inline-block;
@@ -160,6 +217,7 @@ img {
   text-decoration: none;
   text-align: center;
 }
+
 .hotel-botao-reserva:hover {
   color: #1c1c1c;
   background-color: #fff;
