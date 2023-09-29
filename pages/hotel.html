@@ -32,6 +32,32 @@
   </nav>
 </header>
 
+<div class="hamburger-menu">
+  <div id="links">
+    <li>
+      <a href="/">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="/#hotels">Hotéis</a>
+    </li>
+  </div>
+  <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    } 
+  </script>
+</div>
+
 <body>
   <div class="container">
     <a class="back-button" href="../">
@@ -64,11 +90,15 @@
       </div>
       <h3>Descrição</h3>
       <p class="hotel-descricao">
-        O Pullman São Paulo Vila Olímpia é ideal para viajantes a negócios, situado no distrito comercial da Vila Olímpia, São
+        O Pullman São Paulo Vila Olímpia é ideal para viajantes a negócios, situado no distrito comercial da Vila
+        Olímpia, São
         Paulo, oferecendo Wi-Fi gratuito. O hotel apresenta espaçosos quartos e suítes com Smart TVs de 55", além de
-        instalações como um business center e salas para eventos. Os hóspedes podem desfrutar de um café da manhã variado e
-        culinária contemporânea no restaurante HUB Food Art Lounge. O bar casual do restaurante também serve café brasileiro e
-        bebidas refrescantes ao longo do dia e noite. Uma escolha conveniente e confortável para viajantes de negócios na
+        instalações como um business center e salas para eventos. Os hóspedes podem desfrutar de um café da manhã
+        variado e
+        culinária contemporânea no restaurante HUB Food Art Lounge. O bar casual do restaurante também serve café
+        brasileiro e
+        bebidas refrescantes ao longo do dia e noite. Uma escolha conveniente e confortável para viajantes de negócios
+        na
         movimentada São Paulo.
       </p>
       <h3>Facilidades</h3>

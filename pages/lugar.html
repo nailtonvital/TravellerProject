@@ -12,8 +12,8 @@
 
   <title>Lugares</title>
 </head>
-<header class="header">
-  <nav>
+<header>
+  <nav class="header">
     <div>
       <h2>
         <a href="/">
@@ -32,6 +32,33 @@
   </nav>
 </header>
 
+<div class="hamburger-menu">
+  <div id="links">
+    <li>
+      <a href="/">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="/#hotels">Hotéis</a>
+    </li>
+  </div>
+  <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    } 
+  </script>
+</div>
+
+
 <body>
   <div class="container">
     <a class="back-button" href="../">
@@ -45,10 +72,13 @@
       <h3>Descrição</h3>
       <p class="hotel-descricao">
         O Templo Zu Lai, localizado em Cotia, São Paulo, é um enclave onde a serenidade da natureza se entrelaça com as
-        tradições budistas. Com uma área de 150 mil metros quadrados, o templo foi inaugurado em 2003 e se tornou um local de
+        tradições budistas. Com uma área de 150 mil metros quadrados, o templo foi inaugurado em 2003 e se tornou um
+        local de
         celebração do budismo humanista, oferecendo um refúgio para relaxamento e contemplação em silêncio. A construção
-        surpreendeu os arquitetos contratados, que desconheciam o design planejado pela mestra do templo. Ela os levou a uma
-        viagem à China, onde se inspiraram nos templos da Dinastia Tang. Visitar o Templo Zu Lai é uma experiência essencial
+        surpreendeu os arquitetos contratados, que desconheciam o design planejado pela mestra do templo. Ela os levou a
+        uma
+        viagem à China, onde se inspiraram nos templos da Dinastia Tang. Visitar o Templo Zu Lai é uma experiência
+        essencial
         para aqueles que buscam tranquilidade e conexão com a natureza.
       </p>
 

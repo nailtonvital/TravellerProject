@@ -41,6 +41,10 @@ header {
   }
 }
 
+.hamburger-menu {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -56,7 +60,7 @@ body {
   color: #1c1c1c;
   background-image: url("../images/lugares/big-city-morning.jpg");
   font-weight: 600;
-  background-position: "center";
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f1f1f1;
@@ -223,8 +227,55 @@ img {
   background-color: #fff;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width:768px) {
+  .back-button {
+    display: none;
+  }
+
   .card-area a {
     width: 100%;
+  }
+
+  .hamburger-menu {
+    visibility: visible;
+  }
+
+  .hamburger-menu {
+    overflow: hidden;
+    background-color: #272727;
+    z-index: 1;
+  }
+
+  .hamburger-menu #links {
+    display: none;
+  }
+
+  .hamburger-menu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .hamburger-menu a.icon {
+    background: #ddd;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 15px;
+    z-index: 2;
+    color: #000000;
+  }
+
+  .hamburger-menu a:hover {
+    background-color: #000000;
+    color: #ddd;
+  }
+
+  header {
+    display: none;
   }
 }

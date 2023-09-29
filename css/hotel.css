@@ -219,6 +219,79 @@ img {
 }
 
 @media (max-width:768px) {
+  body {
+    background-size: auto;
+    background-position-y: 0;
+  }
+
+  .hotel {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-top: 40vh;
+  }
+
+  .hotel-titulo {
+    font-size: 25px;
+  }
+
+  .hotel-avaliacao {
+    display: contents;
+    margin-left: 5px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .back-button {
+    display: none;
+  }
+
+  .hamburger-menu {
+    visibility: visible;
+  }
+
+  .hamburger-menu {
+    overflow: hidden;
+    background-color: #272727;
+    z-index: 1;
+  }
+
+  .hamburger-menu #links {
+    display: none;
+  }
+
+  .hamburger-menu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .hamburger-menu a.icon {
+    background: #ddd;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 15px;
+    z-index: 2;
+    color: #000000;
+  }
+
+  .hamburger-menu a:hover {
+    background-color: #000000;
+    color: #ddd;
+  }
+
+  header {
+    display: none;
+  }
+
   .hotel-botao-reserva {
     width: 100%;
   }

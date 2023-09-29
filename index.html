@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav>
+  <header>
+    <nav class="header">
       <div>
         <h2>
           <a href="/">
@@ -32,15 +32,43 @@
     </nav>
   </header>
 
+  <div class="hamburger-menu">
+    <div id="links">
+      <li>
+        <a href="#hotels">Hotéis</a>
+      </li>
+      <li>
+        <a href="#places">Lugares</a>
+      </li>
+    </div>
+    <a class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      } 
+    </script>
+  </div>
+
+
+
   <div class="hero">
     <div class="hero-content">
       <h1 class="hero-title">Traveller</h1>
       <p class="hero-text">
-        Sejam bem vindos ao Traveller, o seu guia de destino mais completo e visitado da cidade de São Paulo. Aqui você encontra, dicas, principais destinos, hotéis, os melhores restaurantes, parques e muito mais totalmente de graça.
+        Sejam bem vindos ao Traveller, o seu guia de destino mais completo e visitado da cidade de São Paulo. Aqui você
+        encontra, dicas, principais destinos, hotéis, os melhores restaurantes, parques e muito mais totalmente de
+        graça.
       </p>
       <a class="hero-button" href="#places">Veja mais</a>
     </div>
-    <img src="images/lugares/big-city-with-people.jpg" alt="" srcset="" />
+    <img src="images/lugares/big-city-with-people.jpg" class="img-people" alt="" srcset="" />
   </div>
 
   <div class="section" id="hotels">
