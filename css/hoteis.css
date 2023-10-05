@@ -59,70 +59,39 @@ a:hover {
   visibility: hidden;
 }
 
-.hero {
-  position: relative;
-  height: 90vh;
+.barra-pesquisa{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5rem;
-  padding: 5rem;
+  justify-content: space-around;
   align-items: center;
-  text-align: left;
+  width: 98.5%;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/lugares/nigth-city.jpg") no-repeat center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(40%);
-  z-index: -1;
+#cidade {
+  width: 54%;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid #474747;
+  box-shadow: none;
+}
+#data {
+  width: 34%;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid #474747;
+  box-shadow: none;
 }
 
-.hero-title {
-  font-size: 2.7rem;
+.barra-pesquisa button{
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid #474747;
+  box-shadow: none;
+  background-color: #000000;
   color: #fff;
-  margin-bottom: 0.3rem;
-  line-height: 1.2;
-}
-
-.hero-text {
-  font-size: 1.1rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
-
-.hero-button {
-  padding: 15px 40px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-
-.hero-button:hover {
-  color: rgb(255, 255, 255);
-  background-color: #ffffff00;
-  cursor: pointer;
-}
-
-.hero img {
-  width: 80vw;
-  height: 60vh;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .section {
@@ -196,7 +165,7 @@ a:hover {
 }
 
 #description {
-  padding-inline: 30;
+  padding-inline: 7%;
   font-size: 0.9rem;
   overflow: hidden;
   white-space: nowrap;
@@ -204,7 +173,6 @@ a:hover {
   max-lines: 2;
   color: black;
 }
-
 
 .card:hover {
   transform: scale(1.1);
@@ -218,17 +186,6 @@ a:hover {
   height: 70%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.button-see-more {
-  margin-inline: 8rem;
-  padding: 15px 40px;
-  background-color: #1c1c1c;
-  color: white;
-  width: 90%;
-  font-weight: 500;
-  border-radius: 5px;
-  margin-top: 2rem;
 }
 
 footer {
@@ -304,5 +261,24 @@ footer {
 
   .img-people {
     display: none;
+  }
+
+  .barra-pesquisa{
+    flex-direction: column;
+    
+  }
+  
+  #cidade {
+    width: 100%;
+
+  }
+  #data {
+    width: 100%;
+
+  }
+  
+  .barra-pesquisa button{
+    width: 100%;
+
   }
 }

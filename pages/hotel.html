@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/hotel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Traveller</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/hotel.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Traveller</title>
+    <title>Hotel</title>
+  </head>
+  <header class="header">
+    <nav>
+      <div>
+        <h2>
+          <a href="/"> Traveller </a>
+        </h2>
+      </div>
+      <ul>
+        <li>
+          <a href="/pages/hoteis.html">Hotéis</a>
+        </li>
+        <li>
+          <a href="#places">Lugares</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <title>Hotel</title>
-</head>
-<header class="header">
-  <nav>
-    <div>
-      <h2>
-        <a href="/">
-          Traveller
-        </a>
-      </h2>
+  <div class="hamburger-menu">
+    <div id="links">
+      <li>
+        <a href="/"> Home </a>
+      </li>
+      <li>
+        <a href="/#hotels">Hotéis</a>
+      </li>
     </div>
-    <ul>
-      <li>
-        <a href="#hotels">Hotéis</a>
-      </li>
-      <li>
-        <a href="#places">Lugares</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<div class="hamburger-menu">
-  <div id="links">
-    <li>
-      <a href="/">
-        Home
-      </a>
-    </li>
-    <li>
-      <a href="/#hotels">Hotéis</a>
-    </li>
-  </div>
-  <a class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("links");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    } 
-  </script>
-</div>
-
-<body>
-  <div class="container">
-    <a class="back-button" href="../">
-      <i class="fa-solid fa-arrow-left fa-sm"></i>
-      <p href="../">Voltar</p>
+    <a class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
     </a>
-    <div class="hotel">
-      <div class="title_area">
-        <h2 class="hotel-titulo">Pullman São Paulo Vila Olímpia</h2>
-        <p class="hotel-avaliacao">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </div>
+
+  <body>
+    <div class="container">
+      <div class="hotel">
+        <div class="title_area">
+          <div>
+            <p class="hotel-avaliacao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </p>
+            <h2 class="hotel-titulo">Pullman São Paulo Vila Olímpia</h2>
+          </div>
+          <div class="">
+            <p class="hotel-preco">R$ 1.000,00</p>
+            <p class="hotel-preco-label">Por noite</p>
+          </div>
+        </div>
+        <p class="hotel-localizacao">
+          <i class="fas fa-earth-americas local-icone"></i>
+          São Paulo, Brasil
         </p>
-      </div>
-      <p class="hotel-localizacao">
-        <i class="fas fa-earth-americas local-icone"></i>
-        São Paulo, Brasil
-      </p>
 
-      <h3>Quartos disponiveis</h3>
-      <div class="card-area">
-        <img src="../images/hoteis/hotel-room.jpg" alt="Foto quarto" />
+        <h3>Quartos disponiveis</h3>
+        <div class="card-area">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto quarto" />
 
-        <img src="../images/hoteis/whiite-room.jpg" alt="Foto quarto" />
+          <img src="../images/hoteis/whiite-room.jpg" alt="Foto quarto" />
 
-        <img src="../images/hoteis/wood-room.jpg" alt="Foto quarto" />
-      </div>
-      <h3>Descrição</h3>
-      <p class="hotel-descricao">
-        O Pullman São Paulo Vila Olímpia é ideal para viajantes a negócios, situado no distrito comercial da Vila
-        Olímpia, São
-        Paulo, oferecendo Wi-Fi gratuito. O hotel apresenta espaçosos quartos e suítes com Smart TVs de 55", além de
-        instalações como um business center e salas para eventos. Os hóspedes podem desfrutar de um café da manhã
-        variado e
-        culinária contemporânea no restaurante HUB Food Art Lounge. O bar casual do restaurante também serve café
-        brasileiro e
-        bebidas refrescantes ao longo do dia e noite. Uma escolha conveniente e confortável para viajantes de negócios
-        na
-        movimentada São Paulo.
-      </p>
-      <h3>Facilidades</h3>
-      <p>
-        <i class="fas fa-wifi hotel-facilidades_icone"></i>
-        <i class="fas fa-dolly-flatbed hotel-facilidades_icone"></i>
-        <i class="fas fa-coffee hotel-facilidades_icone"></i>
-        <i class="fas fa-spa hotel-facilidades_icone"></i>
-        <i class="fas fa-bed hotel-facilidades_icone"></i>
-        <i class="fas fa-parking hotel-facilidades_icone"></i>
-      </p>
-      <div class="hotel-reservas">
-        <a href="" class="hotel-botao-reserva">Reservar</a>
+          <img src="../images/hoteis/wood-room.jpg" alt="Foto quarto" />
+        </div>
+        <h3>Descrição</h3>
+        <p class="hotel-descricao">
+          O Pullman São Paulo Vila Olímpia é ideal para viajantes a negócios,
+          situado no distrito comercial da Vila Olímpia, São Paulo, oferecendo
+          Wi-Fi gratuito. O hotel apresenta espaçosos quartos e suítes com Smart
+          TVs de 55", além de instalações como um business center e salas para
+          eventos. Os hóspedes podem desfrutar de um café da manhã variado e
+          culinária contemporânea no restaurante HUB Food Art Lounge. O bar
+          casual do restaurante também serve café brasileiro e bebidas
+          refrescantes ao longo do dia e noite. Uma escolha conveniente e
+          confortável para viajantes de negócios na movimentada São Paulo.
+        </p>
+        <h3>Facilidades</h3>
+        <p>
+          <i class="fas fa-wifi hotel-facilidades_icone"></i>
+          <i class="fas fa-dolly-flatbed hotel-facilidades_icone"></i>
+          <i class="fas fa-coffee hotel-facilidades_icone"></i>
+          <i class="fas fa-spa hotel-facilidades_icone"></i>
+          <i class="fas fa-bed hotel-facilidades_icone"></i>
+          <i class="fas fa-parking hotel-facilidades_icone"></i>
+        </p>
+        <div class="hotel-reservas">
+          <a href="" class="hotel-botao-reserva">Reservar</a>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
