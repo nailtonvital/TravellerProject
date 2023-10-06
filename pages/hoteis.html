@@ -1,154 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/hoteis.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Traveller</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="header">
-        <div>
-          <h2>
-            <a href="/"> Traveller </a>
-          </h2>
-        </div>
-        <ul>
-          <li>
-            <a href="/pages/hoteis.html">Hotéis</a>
-          </li>
-          <li>
-            <a href="#places">Lugares</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/hoteis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../scripts/menu.js"></script>
+  <title>Traveller</title>
+</head>
 
-    <div class="hamburger-menu">
-      <div id="links">
+<body>
+  <header>
+    <nav class="header">
+      <div>
+        <h2>
+          <a href="/"> Traveller </a>
+        </h2>
+      </div>
+      <ul>
         <li>
-          <a href="#hotels">Hotéis</a>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/pages/hoteis.html">Hotéis</a>
         </li>
         <li>
           <a href="#places">Lugares</a>
         </li>
-      </div>
-      <a class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hamburger-menu">
+    <div id="links">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/#hotels">Hotéis</a>
+      </li>
+      <li>
+        <a href="/#places">Lugares</a>
+      </li>
+    </div>
+    <a class="icon" onclick="openMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="section" id="hotels">
+    <div class="barra-pesquisa">
+      <input id="cidade" type="text" placeholder="Digite a cidade" />
+      <input id="data" type="date" />
+      <button type="submit">Pesquisar</button>
+    </div>
+    <div class="card-area">
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Meliá Paulista</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
       </a>
-      <script>
-        function myFunction() {
-          var x = document.getElementById("links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-      </script>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/montain-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Pullman São Paulo Vila Olímpia</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 7,30 km do centro...</p>
+        </div>
+      </a>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Fasano São Paulo Itaim</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
+      </a>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Fasano São Paulo Itaim</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
+      </a>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Fasano São Paulo Itaim</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
+      </a>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Fasano São Paulo Itaim</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
+      </a>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Fasano São Paulo Itaim</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
+      </a>
+      <a href="hotel.html">
+        <div class="card">
+          <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
+          <div class="card-title">
+            <h3>Fasano São Paulo Itaim</h3>
+            <p>R$49</p>
+          </div>
+          <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
+        </div>
+      </a>
     </div>
+  </div>
 
-    <div class="section" id="hotels">
-      <div class="barra-pesquisa">
-        <input id="cidade" type="text" placeholder="Digite a cidade" />
-        <input id="data" type="date" />
-        <button type="submit">Pesquisar</button>
-      </div>
-      <div class="card-area">
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Meliá Paulista</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/montain-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Pullman São Paulo Vila Olímpia</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 7,30 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Fasano São Paulo Itaim</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Fasano São Paulo Itaim</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Fasano São Paulo Itaim</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Fasano São Paulo Itaim</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Fasano São Paulo Itaim</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-        <a href="hotel.html">
-          <div class="card">
-            <img src="../images/hoteis/hotel-room.jpg" alt="Foto do Hotel" />
-            <div class="card-title">
-              <h3>Fasano São Paulo Itaim</h3>
-              <p>R$49</p>
-            </div>
-            <p id="description">São Paulo, Brasil. A 2,97 km do centro...</p>
-          </div>
-        </a>
-      </div>
-    </div>
+  <footer>
+    <p>Projeto Traveller - Todos os direitos reservados</p>
+  </footer>
+</body>
 
-    <footer>
-      <p>Projeto Traveller - Todos os direitos reservados</p>
-    </footer>
-  </body>
 </html>

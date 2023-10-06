@@ -59,7 +59,7 @@ a:hover {
   visibility: hidden;
 }
 
-.barra-pesquisa{
+.barra-pesquisa {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -74,6 +74,7 @@ a:hover {
   border: 1px solid #474747;
   box-shadow: none;
 }
+
 #data {
   width: 34%;
   padding: 10px;
@@ -83,7 +84,7 @@ a:hover {
   box-shadow: none;
 }
 
-.barra-pesquisa button{
+.barra-pesquisa button {
   width: 10%;
   padding: 10px;
   margin-bottom: 2rem;
@@ -200,6 +201,7 @@ footer {
 @media (max-width: 768px) {
   .hamburger-menu {
     visibility: visible;
+    margin-bottom: 40px;
   }
 
   .hamburger-menu {
@@ -263,21 +265,22 @@ footer {
     display: none;
   }
 
-  .barra-pesquisa{
+  .barra-pesquisa {
     flex-direction: column;
-    
+
   }
-  
+
   #cidade {
     width: 100%;
 
   }
+
   #data {
     width: 100%;
 
   }
-  
-  .barra-pesquisa button{
+
+  .barra-pesquisa button {
     width: 100%;
 
   }
