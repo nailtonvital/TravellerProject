@@ -196,13 +196,14 @@ a:hover {
 }
 
 #description {
-  padding-inline: 30;
+  width: 90%;
   font-size: 0.9rem;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
   max-lines: 2;
   color: black;
+  line-height: normal;
+  text-align: left;
 }
 
 
