@@ -206,7 +206,6 @@ a:hover {
   text-align: left;
 }
 
-
 .card:hover {
   transform: scale(1.1);
   margin-right: 10px;
@@ -230,6 +229,7 @@ a:hover {
   font-weight: 500;
   border-radius: 5px;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 footer {
