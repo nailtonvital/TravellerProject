@@ -196,15 +196,15 @@ a:hover {
 }
 
 #description {
-  padding-inline: 30;
+  width: 90%;
   font-size: 0.9rem;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
   max-lines: 2;
   color: black;
+  line-height: normal;
+  text-align: left;
 }
-
 
 .card:hover {
   transform: scale(1.1);
@@ -229,6 +229,7 @@ a:hover {
   font-weight: 500;
   border-radius: 5px;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 footer {
