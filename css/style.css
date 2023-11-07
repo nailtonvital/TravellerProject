@@ -5,7 +5,6 @@
   background-image: url('../images/2ltgUkFC.png');
   background-size: cover;
   background-repeat: no-repeat;
-  /* Para redimensionar a imagem para cobrir a tela */
 }
 
 .popins-semi-bold {
@@ -16,6 +15,11 @@
 .title {
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
+}
+
+.list-options {
+  width: 700px;
+  height: 40px
 }
 
 .mt-10 {
@@ -44,4 +48,44 @@
 
 .end-0 {
   right: 0.5rem;
+}
+
+.card-img-rounded-top {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+
+.rounded-5 {
+  border-radius: 20px;
+}
+
+.link-to-page {
+  text-decoration: none;
+  color: rgb(14, 14, 14);
+  font-size: 20px;
+}
+
+.link-to-page:hover {
+  text-decoration: none;
+  color: rgb(0, 61, 174);
+}
+
+@media (max-width:1200px) {
+  .list-cards {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .list-options {
+    visibility: hidden;
+  }
+
+  .list-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
