@@ -1,303 +1,436 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="scripts/menu.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="scripts/menu.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <title>Traveller</title>
+  </head>
 
-  <title>Traveller</title>
-</head>
-
-<body>
-  <div class="mb-10">
-    <div class="image">
-      <div class="container-sm mx-auto">
-        <header>
-          <nav class="d-flex justify-content-between">
-            <h3 class="mt-4 popins-semi-bold text-light">Traveller</h3>
-            <button type="button" class="mt-4 btn btn-primary">Login</button>
-          </nav>
-        </header>
-
-        <div>
-          <div class="d-flex flex-column text-light align-items-center mt-10">
-            <div>
-              <h1 class="title text-center">Encontre as férias dos seus sonhos!</h1>
-              <h4 class="text-center">Procure por preços, acomodações e cultura.</h4>
-            </div>
-            <div class="w-75 px-2 bg-light d-flex justify-content-between rounded-pill mt-2 py-1">
-              <input class="form-control mr-sm-2 border border-0 rounded-pill" type="search" placeholder="Buscar"
-                aria-label="Search">
-              <button class="d-flex align-items-center px-2 border border-0 bg-transparent">
-                <i class="fa-solid fa-magnifying-glass text-primary"></i>
-              </button>
-            </div>
-            <div class="d-flex flex-wrap w-75 justify-content-around mt-3">
+  <body>
+    <div class="mb-10">
+      <div class="image">
+        <div class="container-sm mx-auto">
+          <header>
+            <nav class="d-flex justify-content-between">
+              <h3 class="mt-4 popins-semi-bold text-light">Traveller</h3>
               <button
-                class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light">
-                <p class="mt-3 popins-semi-bold"><i class="fa-solid fa-umbrella-beach"></i> Cidades</p>
+                type="button"
+                class="mt-4 btn btn-primary px-5"
+                onclick="window.location.href = 'pages/login.html'"
+              >
+                Login
               </button>
+            </nav>
+          </header>
 
-              <button
-                class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light">
-                <p class="mt-3 popins-semi-bold"><i class="fa-solid fa-plane-departure"></i> Hotéis</p>
-              </button>
+          <div>
+            <div class="d-flex flex-column text-light align-items-center mt-10">
+              <div>
+                <h1 class="title text-center">
+                  Encontre as férias dos seus sonhos!
+                </h1>
+                <h4 class="text-center">
+                  Procure por preços, acomodações e cultura.
+                </h4>
+              </div>
+              <div
+                class="w-75 px-2 bg-light d-flex justify-content-between rounded-pill mt-2 py-1"
+              >
+                <input
+                  class="form-control mr-sm-2 border border-0 rounded-pill"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button
+                  class="d-flex align-items-center px-2 border border-0 bg-transparent"
+                >
+                  <i class="fa-solid fa-magnifying-glass text-primary"></i>
+                </button>
+              </div>
+              <div class="d-flex flex-wrap w-75 justify-content-around mt-3">
+                <button
+                  class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light"
+                  onclick="window.location.href = '#cidades'"
+                >
+                  <p class="mt-3 popins-semi-bold">
+                    <i class="fa-solid fa-umbrella-beach"></i> Cidades
+                  </p>
+                </button>
 
-              <button
-                class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light">
-                <p class="mt-3 popins-semi-bold"><i class="fa-solid fa-utensils"></i> Restaurantes</p>
-              </button>
+                <button
+                  class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light"
+                  onclick="window.location.href = '#hoteis'"
+                >
+                  <p class="mt-3 popins-semi-bold">
+                    <i class="fa-solid fa-plane-departure"></i> Hotéis
+                  </p>
+                </button>
 
-              <button
-                class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light">
-                <p class="mt-3 popins-semi-bold"><i class="fa-solid fa-map-location-dot"></i> Pontos turisticos</p>
-              </button>
+                <button
+                  class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light"
+                  onclick="window.location.href = '#restaurantes'"
+                >
+                  <p class="mt-3 popins-semi-bold">
+                    <i class="fa-solid fa-utensils"></i> Restaurantes
+                  </p>
+                </button>
+
+                <button
+                  class="d-flex align-items-center justify-content-center px-4 border border-0 mb-3 rounded-pill bg-primary text-light"
+                  onclick="window.location.href = '#pontos'"
+                >
+                  <p class="mt-3 popins-semi-bold">
+                    <i class="fa-solid fa-map-location-dot"></i> Pontos
+                    turisticos
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cidades" class="mt-5">
+        <div class="container-sm mx-auto">
+          <div class="d-flex justify-content-between">
+            <h4 class="popins-semi-bold">Cidades</h4>
+            <a class="link-to-page" href="pages/hotel.html">Ver tudo</a>
+          </div>
+          <div class="d-flex justify-content-between list-cards">
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://magazine.zarpo.com.br/wp-content/uploads/2021/05/oq-fazer-no-maranhao_zarpo.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="px-2 mt-2 py-2">
+                <h5 class="card-title popins-semi-bold">Maranhão</h5>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://guardemais.com.br/wp-content/uploads/2023/01/salvador-ba-scaled.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de salvador"
+                style="height: 175px"
+              />
+              <div class="px-2 mt-2 py-2">
+                <h5 class="card-title popins-semi-bold">Salvador</h5>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://imgmd.net/images/v1/guia/1705049/aracaju.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Aracaju"
+                style="height: 175px"
+              />
+              <div class="px-2 mt-2 py-2">
+                <h5 class="card-title popins-semi-bold">Aracaju</h5>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hoteis" class="mt-5">
+        <div class="container-sm mx-auto">
+          <div class="d-flex justify-content-between">
+            <h4 class="popins-semi-bold">Hotéis</h4>
+            <a class="link-to-page" href="pages/hotel.html">Ver tudo</a>
+          </div>
+          <div class="d-flex justify-content-between list-cards">
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2015/04/27/1448/Grand-Hyatt-Dubai-P353-Hotel-Exterior-Pools-Twilight.jpg/Grand-Hyatt-Dubai-P353-Hotel-Exterior-Pools-Twilight.16x9.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">Grand hyatt</h5>
+                <p>Vista para o mar</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+              <div
+                class="position-absolute bottom-6 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 30px"
+              >
+                <p class="mt-3 text-light">
+                  5 <i class="fa-solid fa-star text-warning"></i>
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/302369668.jpg?k=3a91ae174c4610bbdadca58f8a34d9f8e46a6c9368decc693ad23bf8992af7c1&o=&hp=1"
+                class="card-img-rounded-top"
+                alt="Imagem de salvador"
+                style="height: 175px"
+              />
+              <div class="px-2 mt-2 py-2">
+                <h5 class="popins-semi-bold">Colline de france</h5>
+                <p>Melhor do mundo</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+              <div
+                class="position-absolute bottom-6 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 30px"
+              >
+                <p class="mt-3 text-light">
+                  5 <i class="fa-solid fa-star text-warning"></i>
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://s2.glbimg.com/_9CbVQbjuRkkoms5S7D6C0_V_1s=/smart/e.glbimg.com/og/ed/f/original/2019/02/22/20-exterior-jhid_santabarbaracoasthouse.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Aracaju"
+                style="height: 175px"
+              />
+              <div class="px-2 mt-2 py-2">
+                <h5 class="popins-semi-bold">Casa da montanha</h5>
+                <p>Viva o natal</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+              <div
+                class="position-absolute bottom-6 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 30px"
+              >
+                <p class="mt-3 text-light">
+                  5 <i class="fa-solid fa-star text-warning"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="restaurantes" class="mt-5">
+        <div class="container-sm mx-auto">
+          <div class="d-flex justify-content-between">
+            <h4 class="popins-semi-bold">Restaurantes</h4>
+            <a class="link-to-page">Ver tudo</a>
+          </div>
+          <div class="d-flex justify-content-between list-cards">
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2021/06/A-Casa-do-Porco_-San-Ze-linguica-caipira-o-que-veio-da-horta_Cred-Mauro-Holanda-1.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">A casa do porco</h5>
+                <p>Expecializada em súinos</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://axwwgrkdco.cloudimg.io/v7/__gmpics__/5ef6c92ff67b442995c56f4c9c4c25d0"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">Lasai</h5>
+                <p>Guia michelin</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/57f46249cd0f6802f4dee2a7/1523815119599-AT3WNB6ZXSLYV9BWJWTR/Oteque_2018-02-193980.jpg?format=1500w"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">Lasai</h5>
+                <p>Menu degustação</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pontos" class="mt-5">
+        <div class="container-sm mx-auto">
+          <div class="d-flex justify-content-between">
+            <h4 class="popins-semi-bold">Pontos túristicos</h4>
+            <a class="link-to-page">Ver tudo</a>
+          </div>
+          <div class="d-flex justify-content-between list-cards">
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://www.civitatis.com/blog/wp-content/uploads/2022/10/panoramica-rio-janeiro-brasil.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">Cristo Redentor</h5>
+                <p>Rio de Janeiro</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://catracalivre.com.br/wp-content/uploads/2018/08/cidades-mais-baratas-viajar-feriado-7-de-setembro.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">Jardim Botânico</h5>
+                <p>Curitiba</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
+            </div>
+
+            <div
+              class="position-relative rounded-5 border border-2 border-black shadow"
+              style="width: 20rem"
+            >
+              <img
+                src="https://www.destino.foz.br/wp-content/uploads/2022/01/002-%E2%80%93-Cataratas-do-Iguacu.jpg"
+                class="card-img-rounded-top"
+                alt="Imagem de Maranhão"
+                style="height: 175px"
+              />
+              <div class="p-2 mt-2">
+                <h5 class="popins-semi-bold">Cataratas do iguaçu</h5>
+                <p>Foz do iguaçu</p>
+              </div>
+              <div
+                class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="fa-regular fa-bookmark text-light"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="mt-5">
-      <div class="container-sm mx-auto">
-        <div class="d-flex justify-content-between">
-          <h4 class="popins-semi-bold">Cidades</h4>
-          <a class="link-to-page" href="pages/hotel.html">Ver tudo</a>
-        </div>
-        <div class="d-flex justify-content-between list-cards">
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img src="https://magazine.zarpo.com.br/wp-content/uploads/2021/05/oq-fazer-no-maranhao_zarpo.jpg"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="px-2 mt-2 py-2">
-              <h5 class="card-title popins-semi-bold">Maranhão</h5>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img src="https://guardemais.com.br/wp-content/uploads/2023/01/salvador-ba-scaled.jpg"
-              class="card-img-rounded-top" alt="Imagem de salvador" style="height: 175px;">
-            <div class="px-2 mt-2 py-2">
-              <h5 class="card-title popins-semi-bold">Salvador</h5>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img src="https://imgmd.net/images/v1/guia/1705049/aracaju.jpg" class="card-img-rounded-top"
-              alt="Imagem de Aracaju" style="height: 175px;">
-            <div class="px-2 mt-2 py-2">
-              <h5 class="card-title popins-semi-bold">Aracaju</h5>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-5">
-      <div class="container-sm mx-auto">
-        <div class="d-flex justify-content-between">
-          <h4 class="popins-semi-bold">Hotéis</h4>
-          <a class="link-to-page" href="pages/hotel.html">Ver tudo</a>
-        </div>
-        <div class="d-flex justify-content-between list-cards">
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img
-              src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2015/04/27/1448/Grand-Hyatt-Dubai-P353-Hotel-Exterior-Pools-Twilight.jpg/Grand-Hyatt-Dubai-P353-Hotel-Exterior-Pools-Twilight.16x9.jpg"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">Grand hyatt</h5>
-              <p>Vista para o mar</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-            <div
-              class="position-absolute bottom-6 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 40px; height: 30px;">
-              <p class="mt-3 text-light">5 <i class="fa-solid fa-star text-warning"></i></p>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img
-              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/302369668.jpg?k=3a91ae174c4610bbdadca58f8a34d9f8e46a6c9368decc693ad23bf8992af7c1&o=&hp=1"
-              class="card-img-rounded-top" alt="Imagem de salvador" style="height: 175px;">
-            <div class="px-2 mt-2 py-2">
-              <h5 class="popins-semi-bold">Colline de france</h5>
-              <p>Melhor do mundo</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-            <div
-              class="position-absolute bottom-6 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 40px; height: 30px;">
-              <p class="mt-3 text-light">5 <i class="fa-solid fa-star text-warning"></i></p>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img
-              src="https://s2.glbimg.com/_9CbVQbjuRkkoms5S7D6C0_V_1s=/smart/e.glbimg.com/og/ed/f/original/2019/02/22/20-exterior-jhid_santabarbaracoasthouse.jpg"
-              class="card-img-rounded-top" alt="Imagem de Aracaju" style="height: 175px;">
-            <div class="px-2 mt-2 py-2">
-              <h5 class="popins-semi-bold">Casa da montanha</h5>
-              <p>Viva o natal</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-            <div
-              class="position-absolute bottom-6 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 40px; height: 30px;">
-              <p class="mt-3 text-light">5 <i class="fa-solid fa-star text-warning"></i></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-5">
-      <div class="container-sm mx-auto">
-        <div class="d-flex justify-content-between">
-          <h4 class="popins-semi-bold">Restaurantes</h4>
-          <a class="link-to-page">Ver tudo</a>
-        </div>
-        <div class="d-flex justify-content-between list-cards">
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img
-              src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2021/06/A-Casa-do-Porco_-San-Ze-linguica-caipira-o-que-veio-da-horta_Cred-Mauro-Holanda-1.jpg"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">A casa do porco</h5>
-              <p>Expecializada em súinos</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img src="https://axwwgrkdco.cloudimg.io/v7/__gmpics__/5ef6c92ff67b442995c56f4c9c4c25d0"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">Lasai</h5>
-              <p>Guia michelin</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/57f46249cd0f6802f4dee2a7/1523815119599-AT3WNB6ZXSLYV9BWJWTR/Oteque_2018-02-193980.jpg?format=1500w"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">Lasai</h5>
-              <p>Menu degustação</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-5">
-      <div class="container-sm mx-auto">
-        <div class="d-flex justify-content-between">
-          <h4 class="popins-semi-bold">Pontos túristicos</h4>
-          <a class="link-to-page">Ver tudo</a>
-        </div>
-        <div class="d-flex justify-content-between list-cards">
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img src="https://www.civitatis.com/blog/wp-content/uploads/2022/10/panoramica-rio-janeiro-brasil.jpg"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">Cristo Redentor</h5>
-              <p>Rio de Janeiro</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img
-              src="https://catracalivre.com.br/wp-content/uploads/2018/08/cidades-mais-baratas-viajar-feriado-7-de-setembro.jpg"
-              class="card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">Jardim Botânico</h5>
-              <p>Curitiba</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-
-          <div class="position-relative rounded-5 border border-2 border-black shadow" style="width: 20rem;">
-            <img src="https://www.destino.foz.br/wp-content/uploads/2022/01/002-%E2%80%93-Cataratas-do-Iguacu.jpg"
-              class=" card-img-rounded-top" alt="Imagem de Maranhão" style="height: 175px;">
-            <div class="p-2 mt-2">
-              <h5 class="popins-semi-bold">Cataratas do iguaçu</h5>
-              <p>Foz do iguaçu</p>
-            </div>
-            <div
-              class="position-absolute top-0 end-0 bg-dark bg-opacity-20 rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 30px; height: 30px;">
-              <i class="fa-regular fa-bookmark text-light"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </body>
 </html>

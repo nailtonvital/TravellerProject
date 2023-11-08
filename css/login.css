@@ -1,0 +1,12 @@
+.background-image {
+  padding-bottom: 100px;
+  background-image: url("../images/2ltgUkFC.png");
+  filter: brightness(50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
