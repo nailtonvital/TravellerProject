@@ -70,7 +70,7 @@ body {
 .back-button {
   font-size: 18px;
   color: #fff;
-  margin: 30px 50px;
+  margin-top: 3rem;
   border: #fff 1px solid;
   border-radius: 5px;
   width: fit-content;
@@ -78,7 +78,7 @@ body {
   background-color: transparent;
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
@@ -87,6 +87,7 @@ body {
   margin-left: 7px;
   font-weight: 400;
   font-size: 22px;
+  margin-bottom: 0;
 }
 
 .back-button:hover {
@@ -117,7 +118,7 @@ h3 {
 }
 
 h3,
-.hotel-titulo,
+
 .hotel-localizacao,
 .hotel-descricao,
 .hotel-estrelas,
@@ -134,7 +135,7 @@ h3,
 .hotel-titulo {
   font-size: 40px;
   font-weight: 900;
-  margin-bottom: -10px;
+
 }
 
 .local-icone {
